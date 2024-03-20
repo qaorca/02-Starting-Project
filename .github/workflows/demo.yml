@@ -16,6 +16,7 @@ jobs:
       - name: Test code
         run: npm run test
   build:
+    environment: test
     needs: test
     runs-on: ubuntu-latest
     outputs:
